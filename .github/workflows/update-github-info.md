@@ -17,6 +17,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[mona] "
@@ -44,6 +45,7 @@ than local filesystem or CLI commands. Use web-fetch for external guidance.
 2. Web-fetch the following public pages (use the web-fetch tool):
    - <https://github.blog/latest/>
    - <https://github.blog/changelog/>
+   - <https://awesome-copilot.github.com/workflows/>
 
    Summarize any relevant new or changed information about GitHub features,
    product changes, or community guidance that should be reflected in the
@@ -66,7 +68,8 @@ than local filesystem or CLI commands. Use web-fetch for external guidance.
 6. Attach a short checklist in the PR body for Mona to confirm: "Sources read:
    - notes/mona-notes.md (repo)
    - <https://github.blog/latest/>
-   - <https://github.blog/changelog/>"
+   - <https://github.blog/changelog/>
+   - <https://awesome-copilot.github.com/workflows/>"
 
 7. Exit and report the created pull request URL in the agent's structured output.
 
