@@ -1,5 +1,11 @@
 ---
 name: update-github-info
+# The copilot engine defaults to claude-sonnet-4, which is not available on the
+# Copilot Free tier. 'mini' resolves to the first available small model
+# (haiku -> gpt-5-mini -> gpt-5-nano -> gemini-flash-lite).
+engine:
+  id: copilot
+  model: mini
 on:
   schedule:
     - cron: '17 9 * * *'  # daily, offset minute to avoid load spikes
