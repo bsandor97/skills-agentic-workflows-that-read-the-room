@@ -1,11 +1,11 @@
 ---
 name: update-github-info
-# The copilot engine defaults to claude-sonnet-4, which is not available on the
-# Copilot Free tier. 'mini' resolves to the first available small model
-# (haiku -> gpt-5-mini -> gpt-5-nano -> gemini-flash-lite).
+# The copilot engine is unusable on this account: every model (sonnet-4,
+# haiku-4.5, gpt-5.4-mini) is rejected with "400 The requested model is not
+# supported", because Copilot Free does not cover agentic CLI calls.
+# Using Claude Code instead, authenticated with the ANTHROPIC_API_KEY secret.
 engine:
-  id: copilot
-  model: gpt-5-mini
+  id: claude
 on:
   schedule:
     - cron: '17 9 * * *'  # daily, offset minute to avoid load spikes
