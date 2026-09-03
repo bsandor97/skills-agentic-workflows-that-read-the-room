@@ -5,7 +5,7 @@ name: update-github-info
 # (haiku -> gpt-5-mini -> gpt-5-nano -> gemini-flash-lite).
 engine:
   id: copilot
-  model: mini
+  model: gpt-5-mini
 on:
   schedule:
     - cron: '17 9 * * *'  # daily, offset minute to avoid load spikes
